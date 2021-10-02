@@ -1,5 +1,4 @@
 import random as r
-import os
 
 arquivo = open('data/nomes.txt', 'r')
 nomes = (arquivo.readline()).split(",")
@@ -29,9 +28,6 @@ def geraCPF():
 
 def geraCNPJ():
    return geraNumero(14)
-
-def clear():
-   os.system('cls' if os.name == 'nt' else 'clear')
 
 generate = {
    "1": geraNome(),
